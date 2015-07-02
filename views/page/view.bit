@@ -1,0 +1,6 @@
+<div class="post">
+  <h1><?php echo Page::title() ?></h1>
+  <article>
+  <?php echo Page::content() ?>
+  </article>
+</div>

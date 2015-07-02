@@ -1,0 +1,37 @@
+<article class="post">
+
+		<h1 class="post-title">
+			<a href="<?php echo Post::permalink() ?>"><?php echo Post::title() ?></a>
+		</h1>
+		<div class="meta"><span class="glyphicon glyphicon-calendar"></span><span class="date"><?php echo Post::published() ?></span>
+        <span class="glyphicon glyphicon-user"></span><span class="user"><?php echo $settings['seo_author'] ?></span>
+        <span>in</span><span class="category"><?php echo $post['category']; ?></span>
+        <span class="glyphicon glyphicon-comment"></span><span class="comments"><?php echo Post::comment_count_link() ?></span>
+        </div>
+		<div class="share_wrap">
+		    <span class="share">
+				Share:
+			</span>
+			
+			<span class="share">
+				<a target="_blank" href="<?php echo Post::twitter(Post::title()) ?>">Twitter</a>
+			</span>
+
+			<span class="share">
+				<a target="_blank" href="<?php echo Post::facebook(Post::title()) ?>">Facebook</a>
+			</span>
+
+			<span class="share">
+				<a target="_blank" href="<?php echo Post::googleplus(Post::title()) ?>">Google+</a>
+			</span>
+
+			<span class="share">
+				<a target="_blank" href="<?php echo Post::linkedin(Post::title(), Post::description()) ?>">Linkedin</a>
+			</span>
+		</div>
+<br>
+	<div class="post-content">
+		<?php echo Post::content(true) ?>
+	</div>
+
+</article>

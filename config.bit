@@ -1,0 +1,16 @@
+<?php
+
+$theme = array
+(
+	'name'=>'Egl v2',
+	'description'=>'Egl - edited theme',
+	'notes'=>'Everything fixed',
+	'author'=>'Videon Kamov, panagiotisegl',
+	'version'=>'6.0',
+	'last_update'=>'5/6/2015', // dd/mm/yyyy
+	'url'=>'http://panagiotisegl.com', // http://xxxxxxxxxxxxx
+	'template'=>array('blog'=>'default.bit', 'post'=>'default.bit', 'page'=>'default.bit'),
+	'version_supported'=>array('4.0','4.0.1','4.0.2','4.0.3') // Nibbleblog version supported
+);
+
+?>

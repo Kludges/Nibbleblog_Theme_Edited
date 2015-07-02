@@ -1,0 +1,10 @@
+<div class="row" id="pager">
+    <div class="col-md-2">
+	<?php echo Pager::prev_link() ?>
+	</div>
+	<div class="col-md-8">
+	</div>
+	<div class="col-md-2">
+	<?php echo Pager::next_link() ?>
+	</div>
+</div>
